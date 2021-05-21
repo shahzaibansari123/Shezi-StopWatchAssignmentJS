@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color:darkslategrey;
+        display: inline;
+        text-align: center; 
+        width: 100%;
+    }
+    h1{
+        background: lightslategray;
+        color:darkslategray;
+        display: inline;
+        border: solid 0px;
+        border-radius: 10px;
+        padding: 3px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    button{
+        background-color: lightslategray;
+        color:darkslategray;
+        display: inline;
+        border-radius: 8px;
+        border: solid 0px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+</style>
+<body>
+    <div>
+        <h1>Stop Watch</h1>
+    </div>
+    <br>
+    <div>
+        <h1 id="min">00</h1>
+        <h1 id="sec">00</h1>
+        <h1 id="msec">00</h1>
+    </div>
+    <br>
+    <div>
+        <button id='disabled' onclick="start()">Start</button>
+        <button onclick="pause()">pause</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
